@@ -1,15 +1,38 @@
 ﻿#include "pch.h"
 
-// 컴파일러에 의해 생성된 어셈블리 코드가 최적화를 위해 코드 재배치가 발생할 수 있다.
-// 코드 가시성 : 메모리에 데이터와 캐시된 데이터 중 데이터 일관성이 유지되고 있지 않을때 
-// 컴파일러는 멀티 스레드를 고려하지 않는다. -> 싱글 스레드 환경에서 실행을 위한 최적화를 할 여부가 있다.
+CMyStack<int> g_stack;
 
+void WorkerThreadMain_Consume()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		g_stack.pop();
+	}
+}
 
+void WorkerThreadMain_Produce()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		g_stack.push(rand() % 100);
+	}
+}
 
 int main(void)
 {
+	vector<thread> vecThreads;
+	for (int32 i = 0; i < 4; ++i)
+	{
+		if(i % 2)
+			vecThreads.emplace_back(thread(WorkerThreadMain_Consume));
+		else
+			vecThreads.emplace_back(thread(WorkerThreadMain_Produce));
+	}
 
-
+	for (int32 i = 0; i < 4; ++i)
+	{
+		vecThreads[i].join();
+	}
 
 	return 0;
 }

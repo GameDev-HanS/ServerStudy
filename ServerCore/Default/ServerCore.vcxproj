@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Private\LockStack.cpp" />
     <ClCompile Include="..\Private\Server_Function.cpp" />
     <ClCompile Include="..\Private\Server_Pch.cpp" />
     <ClCompile Include="..\Private\Server_Struct.cpp" />
@@ -30,6 +31,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Public\LockStack.h" />
     <ClInclude Include="..\Public\Server_Function.h" />
     <ClInclude Include="..\Public\Server_Pch.h" />
     <ClInclude Include="..\Public\Server_Struct.h" />

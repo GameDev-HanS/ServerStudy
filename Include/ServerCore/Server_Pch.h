@@ -27,4 +27,6 @@
 #include "Server_Function.h"
 #include "Server_Struct.h"
 
+#include "LockStack.h"
+
 using namespace std;

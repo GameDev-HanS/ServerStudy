@@ -7,39 +7,51 @@
     <Filter Include="Utility">
       <UniqueIdentifier>{014e9307-b1e9-4a0a-859d-ed06a57f4774}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility\LockStack">
+      <UniqueIdentifier>{8bee2f74-6844-4b25-b663-3b19f1d7d724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Server">
+      <UniqueIdentifier>{6b9a6350-4773-4bd7-91bd-6003ee8aca46}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Utility</Filter>
     </ClCompile>
+    <ClCompile Include="..\Private\LockStack.cpp">
+      <Filter>Utility\LockStack</Filter>
+    </ClCompile>
     <ClCompile Include="..\Private\Server_Function.cpp">
-      <Filter>Utility</Filter>
+      <Filter>Utility\Server</Filter>
     </ClCompile>
     <ClCompile Include="..\Private\Server_Pch.cpp">
-      <Filter>Utility</Filter>
+      <Filter>Utility\Server</Filter>
     </ClCompile>
     <ClCompile Include="..\Private\Server_Struct.cpp">
-      <Filter>Utility</Filter>
+      <Filter>Utility\Server</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\Public\LockStack.h">
+      <Filter>Utility\LockStack</Filter>
+    </ClInclude>
     <ClInclude Include="..\Public\Server_Function.h">
-      <Filter>Utility</Filter>
+      <Filter>Utility\Server</Filter>
     </ClInclude>
     <ClInclude Include="..\Public\Server_Pch.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Public\Server_Types.h">
-      <Filter>Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Public\Server_Utility.h">
-      <Filter>Utility</Filter>
+      <Filter>Utility\Server</Filter>
     </ClInclude>
     <ClInclude Include="..\Public\Server_Struct.h">
-      <Filter>Utility</Filter>
+      <Filter>Utility\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Types.h">
+      <Filter>Utility\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Utility.h">
+      <Filter>Utility\Server</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
