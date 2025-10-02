@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Network">
+      <UniqueIdentifier>{2fdc9b69-1c1c-45ab-8506-d1518a458144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{014e9307-b1e9-4a0a-859d-ed06a57f4774}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Server_Function.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Server_Pch.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Server_Struct.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Function.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Pch.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Types.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Server_Struct.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
